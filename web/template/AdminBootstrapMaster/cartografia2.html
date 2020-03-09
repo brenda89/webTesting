@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:300,400,600" rel="stylesheet">
+    <!-- Include Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <link href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" rel="stylesheet">
+    <!-- Include CARTO.js -->
+    <script src="https://libs.cartocdn.com/carto.js/v4.2.0/carto.min.js"></script>
+    <link href="https://carto.com/developers/carto-js/examples/maps/public/style.css" rel="stylesheet">
+    
+  
+</head>
+
+<body class="grey lighten-3">
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="#" target="_self">
+          <strong class="blue-text">SEDMM</strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link waves-effect" href="#">Inicio
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="#" target="_self">About
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="#"
+                target="_self">Free
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="#" target="_self">
+                tutorials</a>
+            </li>
+          </ul>
+
+          <!-- Right -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect" target="_self">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect" target="_self">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link border border-light rounded waves-effect"
+                target="_self">
+                <i class="fas fa-sign-in-alt"></i>Salir
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div class="sidebar-fixed position-fixed">
+
+      <a class="logo-wrapper waves-effect">
+        <!--<img src="https://mdbootstrap.com/img/logo/mdb-email.png" class="img-fluid" alt="">-->
+        <!--<img src="img/LOGOSGOB_1.png" class="img-fluid" alt="">-->
+        <h2><strong>Michoacán</strong> Morena</h2>
+      </a>
+
+      <div class="list-group list-group-flush">
+        <a href="cartografia.html" class="list-group-item active waves-effect">
+            <i class="fas fa-globe-americas mr-3"></i>Municipios
+        </a>
+        <a href="inicio.html" class="list-group-item waves-effect">
+          <i class="fas fa-chart-pie mr-3"></i>Analisis Estadistico
+        </a>
+        <a href="registrarUsuario.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-user mr-3"></i>Usuarios</a>
+        <a href="registrarBrigadista.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-table mr-3"></i>Brigadistas</a>
+        <a href="cartografia1.html" class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-map mr-3"></i>Cartograf&iacute;a</a>
+        <a href="#" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-file-csv mr-3"></i>Reportes</a>
+      </div>
+
+    </div>
+    <!-- Sidebar -->
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="pt-5 mx-lg-5">
+    <div class="container-fluid mt-5">
+
+      <!-- Heading -->
+      <div class="card mb-4 wow fadeIn">
+
+        <!--Card content-->
+        <div class="card-body d-sm-flex justify-content-between">
+          <h4 class="mb-2 mb-sm-0 pt-1">
+              <a href="#" target="#">Michoacán</a>
+          </h4>
+        </div>
+
+      </div>
+      <!-- Heading -->        
+                        
+                  
+      <!--Grid row-->
+      <div class="row wow fadeIn">            
+        <!--Grid column-->
+        <div class="col-md-12 mb-4">
+          <!--Card-->
+          <div class="card">
+            <!--Card content-->
+            <div class="card-body">
+                
+                <button type="button" class="" data-toggle="modal" data-target="#centralModalLGInfoDemo">                    
+                    <img src="img/Michoacan1.jpg" class="img-fluid" alt="Responsive image">                
+                </button>
+
+                
+                <!-- Central Modal Large Info-->
+                <div class="modal fade" id="centralModalLGInfoDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
+                      <!--Header-->
+                      <div class="modal-header">
+                        <p class="heading lead">Cotija</p>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                      </div>
+
+                      <!--Body-->
+                      <div class="modal-body">                      
+                        <img src="img/avancesCotija.png" class="img-fluid" alt="Responsive image">
+                      </div>
+
+                      <!--Footer-->
+                      <div class="modal-footer">
+  <!--                      <a role="button" class="btn btn-info">Get it now
+                          <i class="far fa-gem ml-1"></i>
+                        </a>-->
+                        <a role="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">
+                          Cerrar</a>
+                      </div>
+                    </div>
+                    <!--/.Content-->
+                  </div>
+                </div>
+                <!-- Central Modal Large Info-->
+
+              
+            </div>
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--Grid column-->     
+      </div>
+      <!--Grid row-->        
+      
+      
+      
+    </div>
+  </main>
+  <!--Main layout-->
+
+  
+  
+  
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+
+
+
+</body>
+
+</html>

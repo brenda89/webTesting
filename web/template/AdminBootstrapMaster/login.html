@@ -16,8 +16,6 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
   <style>
-
-
 html,
 body {
   height: 100%;
@@ -71,37 +69,51 @@ body {
 
   </style>
 </head>
-
-
-<!doctype html>
-<!--<html lang="en">-->
-
-
   <body class="text-center">
       
-      
-      
-      
-      
     <form class="form-signin">
-      <img class="mb-4" src="img/LOGOSGOB_1.png" alt="" width="250" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Inciar Sesi&oacute;n</h1>
-      <label for="inputEmail" class="sr-only">Usuario</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
-      <label for="inputPassword" class="sr-only">Contrase&ntilde;a</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-<!--      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>-->
+      <!--<img class="mb-4" src="img/LOGOSGOB_1.png" alt="" width="250" height="72">-->
+      <h1 class="h3 mb-2 font-weight-normal">SISTEMA ESTATAL DE DATOS  <strong>MICHOAC&Aacute;N MORELIA</strong></h1>
+      <label for="user" class="sr-only">Usuario</label>
+      <input type="text" id="user" class="form-control" placeholder="Usuario" required autofocus>
+      <label for="password" class="sr-only">Contrase&ntilde;a</label>
+      <input type="password" id="password" class="form-control" placeholder="Contraseña" required>
       <!--<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>-->
-      <a class="btn btn-lg btn-primary btn-block" href="inicio.html">Entrar</a>
+      <a class="btn btn-lg btn-primary btn-block" id="btnEntrar">Entrar</a>
       <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>
+  
+      
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>      
+      
+<script>
+    
+    $("#btnEntrar").click(function(){       
+       if($("#user").val() === 'yayo' && $("#password").val() === '123Mich'){
+          window.open("inicio.html", '_self');
+       }else{
+           alert("El usuario no existe.");
+       }       
+    });
+    
+</script>      
+      
+
+
+
   </body>
-<!--</html>-->
-
-
-
 </html>
